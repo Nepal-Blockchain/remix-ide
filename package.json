@@ -3,6 +3,9 @@
   "version": "v0.8.1",
   "description": "Minimalistic browser-based Solidity IDE",
   "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
     "@fortawesome/fontawesome-free": "^5.8.1",
     "@resolver-engine/imports": "^0.3.0",
     "ace-mode-solidity": "^0.1.0",
@@ -26,8 +29,8 @@
     "csslint": "^1.0.2",
     "deep-equal": "^1.0.1",
     "ethereumjs-util": "^5.1.2",
-    "events": "^3.0.0",
     "ethers": "^4.0.27",
+    "events": "^3.0.0",
     "execr": "^1.0.1",
     "exorcist": "^0.4.0",
     "fast-async": "6.3.1",
@@ -94,29 +97,6 @@
       "assets/js/0.7.7/app.js"
     ],
     "parser": "babel-eslint"
-  },
-  "babel": {
-    "plugins": [
-      "transform-es2015-template-literals",
-      "transform-es2015-literals",
-      "transform-es2015-function-name",
-      "transform-es2015-arrow-functions",
-      "transform-es2015-block-scoped-functions",
-      "transform-es2015-classes",
-      "transform-es2015-object-super",
-      "transform-es2015-shorthand-properties",
-      "transform-es2015-duplicate-keys",
-      "transform-es2015-computed-properties",
-      "transform-es2015-for-of",
-      "transform-es2015-sticky-regex",
-      "transform-es2015-unicode-regex",
-      "check-es2015-constants",
-      "transform-es2015-spread",
-      "transform-es2015-parameters",
-      "transform-es2015-destructuring",
-      "transform-es2015-block-scoping",
-      "transform-modern-regexp"
-    ]
   },
   "browserify": {
     "transform": [
